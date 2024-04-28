@@ -1,7 +1,8 @@
 # Distributed Inference System Across Tesla Fleet
 
-![image](https://github.com/uakbr/Tesla-Distributed-GPU-Inference/assets/62894286/5610c429-640e-4443-a03e-7cad384b64c4)
-
+<p align="center">
+  <img src="https://github.com/uakbr/Tesla-Distributed-GPU-Inference/assets/62894286/5610c429-640e-4443-a03e-7cad384b64c4" alt="Image description">
+</p>
 
 ## Overview
 This project harnesses the GPU power of Tesla vehicles to create a scalable and efficient distributed inference system. It's designed to optimize computational tasks across a networked fleet, enhancing fault tolerance, data security, and dynamic load management.
