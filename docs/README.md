@@ -1,60 +1,64 @@
 # Distributed Inference System Across Tesla Fleet
 
 ## Overview
-This project implements a robust, scalable, and efficient distributed inference system utilizing the GPU compute power of Tesla vehicles. The system is designed to optimize computational efficiency across a networked fleet, addressing challenges such as fault tolerance, data security, and dynamic load management.
+This project harnesses the GPU power of Tesla vehicles to create a scalable and efficient distributed inference system. It's designed to optimize computational tasks across a networked fleet, enhancing fault tolerance, data security, and dynamic load management.
+
+## Features
+- **Distributed Computing**: Utilize Tesla vehicles' GPUs for distributed data processing.
+- **Fault Tolerance**: Dynamic task redistribution and real-time node recovery.
+- **Security**: End-to-end encryption and secure boot features.
+- **Performance Optimization**: Load balancing and network optimization for maximum efficiency.
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8 or higher
-- Dependencies as listed in `requirements.txt`
-- Access to a simulated environment or actual Tesla vehicle fleet with network capabilities
+- Python 3.8+
+- Access to a Tesla vehicle fleet or a simulated environment
+- Network capabilities
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repository/distributed-inference-tesla-fleet.git
-   ```
-2. Install required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Clone the repository and install the required dependencies:
+```bash
+git clone https://github.com/your-repository/distributed-inference-tesla-fleet.git
+cd distributed-inference-tesla-fleet
+pip install -r requirements.txt
+```
 
 ### Configuration
-Edit the `src/common/config.py` file to set up network parameters, GPU settings, and other system configurations as per your deployment environment.
+Modify the configuration settings in `src/common/config.py` to tailor the system parameters like network settings, GPU utilization, and security protocols to your environment.
 
 ## Usage
-To launch the system:
-1. Start the server:
-   ```bash
-   python src/server/server_main.py
-   ```
-2. Deploy the vehicle node script to each vehicle in the fleet:
-   ```bash
-   python src/vehicle/vehicle_main.py
-   ```
+Start the server and deploy the vehicle node script:
+```bash
+# Start the server
+python src/server/server_main.py
 
-## System Architecture
-For a detailed explanation of the system architecture, including diagrams and descriptions of the communication flow and component interactions, please refer to `ARCHITECTURE.md`.
+# Deploy to each vehicle
+python src/vehicle/vehicle_main.py
+```
 
-## Contributing
-Contributions to this project are welcome. Please ensure to follow the guidelines outlined in `CONTRIBUTING.md` and submit a pull request for review.
+## Architecture
+For a comprehensive understanding of the system's architecture, including component interactions and data flow, refer to [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-## Testing
-Run the test suite to ensure your setup is configured correctly and all modules are functioning as expected:
+## Development
+### Testing
+Ensure the system's integrity with:
 ```bash
 python -m unittest discover -s tests
 ```
 
+### Contributing
+We encourage contributions! Please refer to [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines on how to make a pull request.
+
+## CI/CD
+This project uses GitHub Actions for continuous integration and deployment. Check our [CI workflow](.github/workflows/ci.yml) and [CD workflow](.github/workflows/cd.yml) for more details.
+
 ## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgments
-- Thanks to all contributors who have invested their time in improving this system.
-- Special thanks to the Tesla software development community for their guidance and support.
+- All contributors and the Tesla software development community.
 
 ## Contact
-For any queries or further assistance, please contact [your-email@example.com](mailto:your-email@example.com).
+Reach out to us at [your-email@example.com](mailto:your-email@example.com) for any inquiries.
 
-## Disclaimer
-This project is not affiliated with or endorsed by Tesla, Inc. It is a conceptual system designed for academic and research purposes.
